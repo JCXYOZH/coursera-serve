@@ -1,0 +1,13 @@
+com\zh\oes\ucenter\utils\ConstantPropertiesUtil.class
+com\zh\oes\ucenter\mapper\MemberMapper.class
+com\zh\oes\ucenter\controller\user\MemberUserWechatController.class
+com\zh\oes\ucenter\service\impl\AppVersionServiceImpl.class
+com\zh\oes\ucenter\controller\admin\MemberAdminController.class
+com\zh\oes\ucenter\service\AppVersionService.class
+com\zh\oes\ucenter\controller\user\AppVersionController.class
+com\zh\oes\ucenter\mapper\AppVersionMapper.class
+com\zh\oes\ucenter\controller\user\MemberUserController.class
+com\zh\oes\ucenter\service\MemberService.class
+com\zh\oes\ucenter\config\UcenterConfig.class
+com\zh\oes\ucenter\UcenterApplication.class
+com\zh\oes\ucenter\service\impl\MemberServiceImpl.class

@@ -1,0 +1,35 @@
+logging:
+  path: ./log/
+
+spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.188.3:8848
+#  application:
+#    name: service-exam
+  redis:
+    host: 192.168.188.3
+#    host: localhost
+    port: 6379
+    password: Big0try92.
+  datasource:
+    url: jdbc:mysql://192.168.188.3:3306/coursera?useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&allowMultiQueries=true
+#    url: jdbc:mysql://localhost:3306/coursera?useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&allowMultiQueries=true
+    username: root
+    password: Big0try92.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-timeout: 10000      # 获取连接超时，适当延长
+      validation-timeout: 5000       # 连接验证超时
+      idle-timeout: 300000
+      max-lifetime: 600000           # 10分钟，比 MySQL wait_timeout 短
+      connection-test-query: SELECT 1
+      minimum-idle: 2
+      maximum-pool-size: 10
+#      leak-detection-threshold: 15000  # 可选，定位连接泄漏
+
+local:
+  upload:
+    path: E:/Backups/Data/coursera/
+#    path: /data/coursera/

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>service</artifactId>
+        <groupId>com.zh.oes</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>service_ucenter</artifactId>
+    <description>用户登录注册的模块</description>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Spring Boot Maven 插件，用于生成可执行 JAR 包 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 如果有父 pom，且父 pom 已管理版本，此处可能不需要 version -->
+                <!-- <version>2.3.12.RELEASE</version> -->
+                <configuration>
+                    <!-- 指定启动类，与你的 UcenterApplication 一致 -->
+                    <mainClass>com.zh.oes.ucenter.UcenterApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- ClassFinal Maven 插件，用于加密项目代码 -->
+            <plugin>
+                <groupId>net.roseboy</groupId>
+                <artifactId>classfinal-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <!-- 1. 加密密码，运行时需要提供 -->
+                    <password>Big0try92.</password>
+                    <!-- 2. 要加密的包名，直接引用你的项目基础包 -->
+                    <packages>com.zh.oes.ucenter</packages>
+                    <!-- 3. 需要加密的配置文件 (根据实际文件名修改) -->
+                    <cfgfiles>application.properties</cfgfiles>
+                    <!-- 4. 排除不需要加密的第三方库 (Spring Boot 核心等) -->
+                    <excludes>org.springframework</excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>classFinal</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

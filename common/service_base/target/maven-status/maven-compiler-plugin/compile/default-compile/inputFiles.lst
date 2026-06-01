@@ -1,0 +1,16 @@
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\VodClientHystrix.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\config\SwaggerConfig.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\config\RedisConfig.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\exception\OESException.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\UcenterClient.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\OrderClient.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\CourseClientHystrix.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\config\WebConfig.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\VodClient.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\OrderClientHystrix.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\exception\GlobalExceptionHandler.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\EduClient.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\UcenterClientHystrix.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\handler\TimeFillHandler.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\EduClientHystrix.java
+E:\Projects\Java\coursera-serve\common\service_base\src\main\java\com\zh\oes\common\base\client\CourseClient.java
