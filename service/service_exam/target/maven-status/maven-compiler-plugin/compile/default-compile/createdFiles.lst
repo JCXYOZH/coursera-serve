@@ -180,7 +180,6 @@ com\mindskip\xzs\domain\Question.class
 com\mindskip\xzs\event\OnRegistrationCompleteEvent.class
 com\mindskip\xzs\exception\BusinessException.class
 com\mindskip\xzs\domain\enums\ExamPaperAnswerStatusEnum.class
-com\mindskip\xzs\XzsApplication.class
 com\mindskip\xzs\domain\UserEventLog.class
 com\mindskip\xzs\controller\ErrorController.class
 com\mindskip\xzs\controller\student\ExchangeController.class

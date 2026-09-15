@@ -2,9 +2,7 @@ package com.zh.oes.edu.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zh.oes.model.entity.edu.Course;
-import com.zh.oes.model.vo.edu.admin.CourseInfoVO;
-import com.zh.oes.model.vo.edu.admin.CoursePublishVO;
-import com.zh.oes.model.vo.edu.admin.CourseQueryCondition;
+import com.zh.oes.model.vo.edu.admin.*;
 import com.zh.oes.model.vo.edu.user.CourseUserInfoVO;
 import com.zh.oes.model.vo.edu.user.CourseUserQueryCondition;
 
@@ -65,4 +63,12 @@ public interface CourseService extends IService<Course> {
 
     // 取消收藏课程
     void cancelCollectCourse(Long courseId, Long memberId);
+
+    /**
+     * 获取所有已发布课程及其关联信息 (供ES同步)
+     * @return CourseEsVO列表
+     */
+    List<CourseEsVO> getAllPublishedCourseForES();
+
+    CourseEsVO getCourseByIdForES(Long courseId);
 }

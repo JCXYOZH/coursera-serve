@@ -10,9 +10,11 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.zh.oes.model.vo.edu.admin.CourseEsVO;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
+import java.util.List;
 
 @Api(tags = "课程前台api接口")
 @RestController
@@ -102,5 +104,17 @@ public class CourseUserController {
             @ApiParam(name = "courseId", value = "课程id", required = true)
             @PathVariable("courseId") Long courseId) {
         return courseService.getUserCourseInfoById(courseId);
+    }
+
+    @ApiOperation(value = "远程调用:获取所有已发布课程(包含讲师/分类名)")
+    @GetMapping("remoteGetAllPublishedCourse")
+    public List<CourseEsVO> remoteGetAllPublishedCourse() {
+        return courseService.getAllPublishedCourseForES();
+    }
+
+    @ApiOperation(value = "远程调用:根据课程ID获取课程(包含讲师/分类名)")
+    @GetMapping("remoteGetCourseById/{courseId}")
+    public CourseEsVO remoteGetCourseById(@PathVariable Long courseId) {
+        return courseService.getCourseByIdForES(courseId);
     }
 }

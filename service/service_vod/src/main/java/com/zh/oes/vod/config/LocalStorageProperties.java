@@ -10,8 +10,8 @@ public class LocalStorageProperties {
     /**
      * 本地存储根路径
      */
-    private String rootPath = "E:\\Backups\\Data\\coursera";
-//    private String rootPath = "/data/coursera";
+//    private String rootPath = "E:\\Backups\\Data\\coursera";
+    private String rootPath = "/data/coursera";
 
     public String getRootPath() {
         return rootPath;

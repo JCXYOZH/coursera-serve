@@ -115,8 +115,8 @@ public class MemberUserWechatController {
             );
 
             //返回首页。通过路径传递token字符串
-            return "redirect:http://localhost:3000?token=" + token;
-//            return "redirect:http://539a0cb0.r16.vip.cpolar.cn?token=" + token;
+//            return "redirect:http://localhost:3000?token=" + token;
+            return "redirect:http://10.221.173.121:50000?token=" + token;
 
         } catch (Exception e) {
             e.printStackTrace();

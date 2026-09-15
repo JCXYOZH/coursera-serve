@@ -1,5 +1,5 @@
-logging:
-  path: ./log/
+#logging:
+#  path: ./log/
 
 spring:
 #  cloud:

@@ -393,4 +393,14 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         wrapper.eq(CourseCollect::getMemberId, memberId);
         collectService.remove(wrapper);
     }
+
+    @Override
+    public List<CourseEsVO> getAllPublishedCourseForES() {
+        return baseMapper.selectAllPublishedCourseForES();
+    }
+
+    @Override
+    public CourseEsVO getCourseByIdForES(Long courseId) {
+        return baseMapper.selectCourseByIdForES(courseId);
+    }
 }

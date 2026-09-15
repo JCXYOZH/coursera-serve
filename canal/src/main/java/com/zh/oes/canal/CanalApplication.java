@@ -4,13 +4,16 @@ import com.zh.oes.canal.client.CanalClient;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 import javax.annotation.Resource;
 
-// canal模块是用于多台机器时数据同步的,单机不需要启动
-@SpringBootApplication
+// 排除数据源自动配置，因为此微服务不再需要连接数据库
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class CanalApplication implements CommandLineRunner {
-    @Resource
+
+//    @Resource
+    @javax.annotation.Resource
     private CanalClient canalClient;
 
     public static void main(String[] args) {
@@ -19,7 +22,13 @@ public class CanalApplication implements CommandLineRunner {
 
     @Override
     public void run(String... strings) {
-        //项目启动，执行canal客户端监听
-        canalClient.run();
+        // 使用新线程异步执行，避免连接失败导致整个应用启动失败
+        new Thread(() -> {
+            try {
+                canalClient.run();
+            } catch (Exception e) {
+                System.err.println("Canal 客户端启动或连接失败，请检查 Canal 服务端 (11111端口) 是否正常启动: " + e.getMessage());
+            }
+        }).start();
     }
 }

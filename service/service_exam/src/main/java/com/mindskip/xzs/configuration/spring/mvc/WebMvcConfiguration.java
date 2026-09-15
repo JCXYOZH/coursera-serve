@@ -11,12 +11,6 @@ import org.springframework.web.servlet.config.annotation.*;
 import java.util.List;
 
 
-/**
- * @version 3.5.0
- * @description: The type Web mvc configuration.
- * Copyright (C), 2020-2025, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
 @Configuration
 public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
@@ -57,8 +51,8 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/file/**")
-                .addResourceLocations("file:E:/Backups/Data/coursera/file/")
-//                .addResourceLocations("file:/data/coursera/file/")
+//                .addResourceLocations("file:E:/Backups/Data/coursera/file/")
+                .addResourceLocations("file:/data/coursera/file/")
                 .setCachePeriod(31556926);
     }
 

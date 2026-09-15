@@ -1,0 +1,11 @@
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\controller\MessageController.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\mapper\NoticeReadMapper.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\websocket\NoticeWebSocket.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\entity\Notice.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\service\MessageService.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\mapper\NoticeVO.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\MessageApplication.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\service\impl\MessageServiceImpl.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\mapper\NoticeMapper.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\entity\NoticeRead.java
+E:\Projects\Java\coursera-serve\service\service_message\src\main\java\com\zh\oes\message\config\WebSocketConfig.java

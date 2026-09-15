@@ -13,8 +13,10 @@
     <file url="file://$PROJECT_DIR$/service/service_cms/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_edu/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_exam/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/service_message/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/service_search/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_sms/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_statistics/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service/service_ucenter/src/main/java" charset="UTF-8" />

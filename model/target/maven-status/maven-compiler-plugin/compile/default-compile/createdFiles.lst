@@ -38,6 +38,7 @@ com\zh\oes\model\vo\edu\admin\CommentQueryCondition.class
 com\zh\oes\model\vo\edu\user\CommentVO.class
 com\zh\oes\model\vo\edu\admin\ChapterVO.class
 com\zh\oes\model\entity\order\PayOrder.class
+com\zh\oes\model\vo\edu\admin\CourseEsVO.class
 com\zh\oes\model\vo\auth\RoleQueryCondition.class
 com\zh\oes\model\vo\edu\admin\SubjectDownloadVO.class
 com\zh\oes\model\vo\edu\user\StudyRecordVO.class

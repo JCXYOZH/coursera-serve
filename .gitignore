@@ -32,5 +32,6 @@ build/
 .vscode/
 
 
+/log/
 /coursera.7z
 /ScanTheQRCode/jre/

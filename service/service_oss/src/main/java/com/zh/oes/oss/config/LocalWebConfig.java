@@ -10,7 +10,7 @@ public class LocalWebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/image/**")
-                .addResourceLocations("file:E:/Backups/Data/coursera/image/");
-//                .addResourceLocations("file:/data/coursera/image/");
+//                .addResourceLocations("file:E:/Backups/Data/coursera/image/");
+                .addResourceLocations("file:/data/coursera/image/");
     }
 }

@@ -22,6 +22,8 @@
         <module>service_vod</module>
         <module>service_cms</module>
         <module>service_ucenter</module>
+        <module>service_search</module>
+        <module>service_message</module>
     </modules>
 
     <properties>

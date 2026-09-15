@@ -43,4 +43,37 @@
                  left OUTER join edu_subject es2 on ec.type_id = es2.id
         where ec.id = #{courseId}
     </select>
+
+    <!-- 查询所有已发布课程及其关联的讲师和分类信息 (供全量同步ES使用) -->
+    <select id="selectAllPublishedCourseForES" resultType="com.zh.oes.model.vo.edu.admin.CourseEsVO">
+        SELECT
+            c.id, c.title, c.cover, c.description, c.price,
+            c.sale_count as saleCount, c.view_count as viewCount, c.status, c.is_deleted as isDeleted, c.lesson_num as lessonNum,
+            c.teacher_id as teacherId, t.name as teacherName,
+            c.subject_id as subjectId, s1.title as subjectTitle,
+            c.type_id as typeId, s2.title as typeTitle,
+            c.create_time as createTime
+        FROM edu_course c
+                 LEFT JOIN edu_teacher t ON c.teacher_id = t.id
+                 LEFT JOIN edu_subject s1 ON c.subject_id = s1.id
+                 LEFT JOIN edu_subject s2 ON c.type_id = s2.id
+        WHERE c.status = 1 AND (c.is_deleted = 0 OR c.is_deleted IS NULL)
+    </select>
+
+    <!-- 根据课程ID查询课程及其关联信息 (供ES增量同步使用) -->
+    <select id="selectCourseByIdForES" resultType="com.zh.oes.model.vo.edu.admin.CourseEsVO">
+        SELECT
+            c.id, c.title, c.cover, c.description, c.price,
+            c.sale_count as saleCount, c.view_count as viewCount, c.status, c.is_deleted as isDeleted, c.lesson_num as lessonNum,
+            c.teacher_id as teacherId, t.name as teacherName,
+            c.subject_id as subjectId, s1.title as subjectTitle,
+            c.type_id as typeId, s2.title as typeTitle,
+            c.create_time as createTime
+        FROM edu_course c
+                 LEFT JOIN edu_teacher t ON c.teacher_id = t.id
+                 LEFT JOIN edu_subject s1 ON c.subject_id = s1.id
+                 LEFT JOIN edu_subject s2 ON c.type_id = s2.id
+        WHERE c.id = #{courseId}
+    </select>
+
 </mapper>

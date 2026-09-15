@@ -1,0 +1,11 @@
+com\zh\oes\message\entity\NoticeRead.class
+com\zh\oes\message\entity\Notice.class
+com\zh\oes\message\websocket\NoticeWebSocket.class
+com\zh\oes\message\mapper\NoticeVO.class
+com\zh\oes\message\config\WebSocketConfig.class
+com\zh\oes\message\MessageApplication.class
+com\zh\oes\message\service\impl\MessageServiceImpl.class
+com\zh\oes\message\controller\MessageController.class
+com\zh\oes\message\mapper\NoticeMapper.class
+com\zh\oes\message\mapper\NoticeReadMapper.class
+com\zh\oes\message\service\MessageService.class
