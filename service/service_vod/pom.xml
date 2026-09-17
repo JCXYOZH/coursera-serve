@@ -11,7 +11,7 @@
 
     <artifactId>service_vod</artifactId>
     <packaging>jar</packaging>
-    <description>阿里云视频点播模块</description>
+    <description>视频模块</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

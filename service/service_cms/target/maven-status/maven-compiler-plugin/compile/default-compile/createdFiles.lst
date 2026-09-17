@@ -1,7 +1,0 @@
-com\zh\oes\cms\config\CmsConfig.class
-com\zh\oes\cms\service\BannerService.class
-com\zh\oes\cms\mapper\BannerMapper.class
-com\zh\oes\cms\controller\user\BannerUserController.class
-com\zh\oes\cms\service\impl\BannerServiceImpl.class
-com\zh\oes\cms\controller\admin\BannerAdminController.class
-com\zh\oes\cms\CmsApplication.class

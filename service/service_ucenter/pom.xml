@@ -27,7 +27,7 @@
                 <!-- 如果有父 pom，且父 pom 已管理版本，此处可能不需要 version -->
                 <!-- <version>2.3.12.RELEASE</version> -->
                 <configuration>
-                    <!-- 指定启动类，与你的 UcenterApplication 一致 -->
+                    <!-- 指定启动类，与 UcenterApplication 一致 -->
                     <mainClass>com.zh.oes.ucenter.UcenterApplication</mainClass>
                 </configuration>
                 <executions>
@@ -47,9 +47,9 @@
                 <configuration>
                     <!-- 1. 加密密码，运行时需要提供 -->
                     <password>Big0try92.</password>
-                    <!-- 2. 要加密的包名，直接引用你的项目基础包 -->
+                    <!-- 2. 要加密的包名，直接引用项目基础包 -->
                     <packages>com.zh.oes.ucenter</packages>
-                    <!-- 3. 需要加密的配置文件 (根据实际文件名修改) -->
+                    <!-- 3. 需要加密的配置文件 -->
                     <cfgfiles>application.properties</cfgfiles>
                     <!-- 4. 排除不需要加密的第三方库 (Spring Boot 核心等) -->
                     <excludes>org.springframework</excludes>

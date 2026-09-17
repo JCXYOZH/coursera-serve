@@ -1,7 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.221.173.121:3306/coursera?serverTimezone=UTC&useSSL=false
+#    url: jdbc:mysql://10.221.173.121:3306/coursera?serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/coursera?serverTimezone=UTC&useSSL=false
     username: root
     password: Big0try92.
     hikari:

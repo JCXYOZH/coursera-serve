@@ -1,6 +1,0 @@
-com\zh\oes\oss\config\LocalWebConfig.class
-com\zh\oes\oss\OssApplication.class
-com\zh\oes\oss\service\OssService.class
-com\zh\oes\oss\config\OssConfig.class
-com\zh\oes\oss\service\impl\OssServiceImpl.class
-com\zh\oes\oss\controller\OssController.class

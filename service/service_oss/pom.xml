@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service_oss</artifactId>
-    <description>对象存储oss模块</description>
+    <description>存储模块</description>
     <packaging>jar</packaging>
 
     <properties>
